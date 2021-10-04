@@ -1,0 +1,62 @@
+header {
+  min-height: 10vh;
+  /* width: 50vw; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.showPlaces {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: 10px;
+}
+
+h4 {
+    margin: 3px 0;
+    padding-right: 10px;
+    font-weight: 300;
+    font-size: 17px;
+    color: cadetblue;
+  }
+
+.showPlaces select {
+  height: 25px;
+  width: 120px;
+  margin-top: 4px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 15px;
+  border: 1px solid cadetblue;
+  border-radius: 7px;
+  background-color: rgba(95, 158, 160, 0.075);
+  color: gray;
+  letter-spacing: 1px;
+}
+
+.legend {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+.legend div {
+  display: flex;
+  flex-direction: row;
+  margin-right: 25px;
+  line-height: 30px;
+  color: rgb(117, 117, 117);
+  font-size: 14px;
+}
+
+.legend .color {
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  margin-left: 0;
+}

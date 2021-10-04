@@ -1,0 +1,53 @@
+form {
+    width: 250px;  
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 0px;
+    color: rgb(88, 87, 87);
+  }
+  
+  form label {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 13px;
+  }
+  
+  form input {
+    min-height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+  }
+  
+  form textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    outline: none;
+  }
+
+  form select {
+    height: 30px;
+    color: rgb(53, 53, 53);
+  }
+  
+  form button {
+    height: 30px;
+    margin-top: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background-color: cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: white;
+  }
+  
+  form button:hover {
+    background-color: rgba(95, 158, 160, 0.075);
+    border-color: cadetblue;
+    color: rgb(112, 112, 112);
+  }
+  
+ 
+  

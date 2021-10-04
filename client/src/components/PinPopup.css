@@ -1,0 +1,48 @@
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200px;
+  min-height: 200px;
+  padding-top: 3px;
+  color: rgb(90, 89, 89);
+}
+
+.popup label {
+  width: max-content;
+  margin: 3px 0;
+  padding-bottom: 2px;
+  border-bottom: 1px solid cadetblue;
+  color: cadetblue;
+  font-size: 13px;
+}
+
+.place {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.desc {
+  font-size: 13px;
+}
+
+.rating {
+  color: gold;
+}
+
+.username {
+  font-size: 13px;
+}
+
+.username span {
+  color: cadetblue;
+}
+
+.mapboxgl-popup {
+  z-index: 2;
+}
+
+div.mapboxgl-popup-content {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
