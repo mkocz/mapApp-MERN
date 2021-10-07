@@ -1,0 +1,25 @@
+{
+  "name": "travelmap",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "@craco/craco": "^6.3.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "node server.js",
+    "client": "cd client && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
