@@ -3,7 +3,6 @@ import PlaceSharpIcon from '@material-ui/icons/PlaceSharp';
 import {  Popup } from 'react-map-gl';
 import "./InfoPopup.css";
 
-
 function InfoPopup(props) {
 
   function closePopup() {
