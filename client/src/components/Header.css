@@ -1,6 +1,5 @@
 header {
   min-height: 10vh;
-  /* width: 50vw; */
   margin: auto;
   display: flex;
   flex-direction: column;
