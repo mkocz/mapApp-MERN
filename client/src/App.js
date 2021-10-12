@@ -71,7 +71,6 @@ function App() {
   const handleMarkerClick = (id, lat, long) => {
     setCurrentPlaceId(id);
     setViewport({ ...viewport, latitude: lat, longitude: long, zoom: 6 })
-    console.log(currentPlaceId)
   }
 
   const closePinPopup = () => {
@@ -110,12 +109,10 @@ function App() {
     } catch (err) {
       console.log(err);
     }
-
     setViewForUser(filtername, viewport);
   };
 
   useEffect(() => {
-    console.log("start app")
     getPins();
     getUsers();
   }, []);
