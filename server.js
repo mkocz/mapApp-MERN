@@ -4,8 +4,8 @@ const dotenv = require("dotenv");
 const app = express();
 const pinRoute = require("./routes/pins");
 const PORT = process.env.PORT || 8080;
-dotenv.config();
 
+dotenv.config();
 
 app.use(express.json());
 
@@ -20,13 +20,10 @@ mongoose.connect(process.env.MONGO_URL, {
 
 if (process.env.NODE_ENV === "production") {
     console.log("start");
-app.use(express.static('client/build'))
+    app.use(express.static('client/build'))
 }
 
-
 app.use("/api/pins", pinRoute);
-
-
 
 app.listen(PORT, () => {
     console.log(`Server is running at ${PORT}`)
