@@ -1,9 +1,7 @@
 import axios from "axios";
 import { WebMercatorViewport } from 'react-map-gl';
 
-
 const goToBoundedView = ([lat1, long1], [lat2, long2], viewport) => {
-
     const { longitude, latitude, zoom } = new WebMercatorViewport(viewport)
         .fitBounds([[lat1, long1], [lat2, long2]], {
             padding: 150,
@@ -39,6 +37,5 @@ const adjustViewtoUsersPins = async (filtername, viewport) => {
         console.log(err);
     }
 }
-
 
 export default adjustViewtoUsersPins
