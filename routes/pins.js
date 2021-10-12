@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const Pin = require("../models/Pin");
 
-
 router.post("/", async (req, res) => {
   const newPin = new Pin(req.body);
   try {
@@ -57,7 +56,6 @@ router.get("/coordinates", async (req, res) => {
       lats = await Pin.find().distinct("lat");
       longs = await Pin.find().distinct("long");
     }
-
     const lats_coord = [Math.min(...lats), Math.max(...lats)]
     const longs_coord = [Math.min(...longs), Math.max(...longs)]
     res.status(200).json([lats_coord, longs_coord]);
